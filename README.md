@@ -10,7 +10,7 @@
 ### Setup
 1. Clone the repository
 
-    git clone https://github.com/navaldabral/articles.git
+    git clone https://github.com/navaldabral/FastAPI-AJAX.git
 
     cd articles
 2. Create a virtual environment and activate it
