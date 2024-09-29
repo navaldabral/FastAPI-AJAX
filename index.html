@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUDE Operation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/custom.css" rel="stylesheet" >
+    <script src="js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="m-5">
+                    <form id="contactForm" class="bg-light formdiv" >
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter Name</label>
+                            <input type="text" id="name" placeholder="Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Enter Email Address</label>
+                            <input type="email" id="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Enter Phone Number</label>
+                            <input type="text" id="phone" placeholder="Phone" maxlength="10" class="form-control">
+                        </div>
+                        <input type="hidden" id="userid" value="">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <div id="successMessage" style="display:none; position: absolute; left: 50%; transform: translateX(-50%); background-color: green; color: white; padding: 10px; font-weight: bold; border-radius: 5px; z-index: 999;"></div>
+                <!-- <div class="m-5"><center><div id="successMessage" style="display:none; color: green; font-weight: bold;"></div></center></div> -->
+                <h2>Contacts List</h2>
+                <input type="text" id="search" placeholder="Search..." class="form-control">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><button id="sortName" class="btn btn-link">Name</button></th>
+                            <th><button id="sortEmail" class="btn btn-link">Email</button></th>
+                            <th><button id="sortPhone" class="btn btn-link">Phone</button></th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contactsTable"></tbody>
+                </table>
+                <div id="paginationControls"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
