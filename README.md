@@ -33,7 +33,7 @@
 
     Models are created automatically when FastAPI run
 
-        "Upload blog.sql if dummy data is needed."
+        "Upload user.sql if dummy data is needed."
 <img width="1469" alt="Screenshot 2024-09-30 at 2 37 42 AM" src="https://github.com/user-attachments/assets/89ced9cf-946b-4aac-bc47-9827bf6f6f8d">
 
 6. Run the application
