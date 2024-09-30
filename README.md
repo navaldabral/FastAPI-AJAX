@@ -12,7 +12,7 @@
 
     git clone https://github.com/navaldabral/FastAPI-AJAX.git
 
-    cd articles
+    cd FastAPI-AJAX
 2. Create a virtual environment and activate it
    
    virtualenv venv
